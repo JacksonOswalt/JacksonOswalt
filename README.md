@@ -1,8 +1,15 @@
 ### Yo 👋
 
-I'm Jackson Oswalt and I'm the yougest person to build a functional IEC nuclear fusion reactor (at 12 years old). I'm currently a student at USC's Iovine and Young Academy. I'm an Atlas Fellow, and I'm funded by Tyler Cowen and Thiel Foundation via. Emergent Ventures.
+I'm Jackson Oswalt and I'm the yougest person to build a functional IEC nuclear fusion reactor (at 12 years old). I'm currently a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
 
-I'm currently working on AI-enabled HCIs and agentic hardware, with an evolving interest in Defense tech as well.
+I'm currently working on AI-enabled **HCIs and agentic hardware**, with an evolving interest in Defense tech.
+
+Previously:
+
+ - 🧪 Built a nuclear fusion reactor at 12
+ - 🥽 Worked on novel VR hardware
+ - 🏅 Funded by Tyler Cowen and Thiel Foundation via. [Emergent Ventures](https://marginalrevolution.com/marginalrevolution/2022/10/emergent-ventures-22nd-cohort.html).
+ - 👨🏻‍💻 Atlas fellow
 
 <!--
 **JacksonOswalt/JacksonOswalt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
