@@ -1,6 +1,6 @@
 # wsg, I'm Jackson
 
-### Currently designing my piece of the future.
+### I'm passionate about making cool shit.
 
 Working on AI-enabled **HCIs and agentic hardware**, with an evolving interest in Defense tech.
 
