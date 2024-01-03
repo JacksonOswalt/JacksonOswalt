@@ -1,8 +1,8 @@
-### Yo 👋
+### I care about building the future.
 
-I'm Jackson Oswalt and I'm the yougest person to build a functional IEC nuclear fusion reactor (at 12 years old). I'm currently a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
+Currently working on AI-enabled **HCIs and agentic hardware**, with an evolving interest in Defense tech.
 
-I'm currently working on AI-enabled **HCIs and agentic hardware**, with an evolving interest in Defense tech.
+I'm a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
 
 Previously:
 
