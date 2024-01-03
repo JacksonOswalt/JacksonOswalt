@@ -8,7 +8,7 @@ Previously:
 
  - 🧪 Built a nuclear fusion reactor at 12
  - 🥽 Worked on novel VR hardware
- - 🏅 Funded by Tyler Cowen and Thiel Foundation via. [Emergent Ventures](https://marginalrevolution.com/marginalrevolution/2022/10/emergent-ventures-22nd-cohort.html).
+ - 🏅 Funded by Tyler Cowen and Thiel Foundation via. [Emergent Ventures](https://marginalrevolution.com/marginalrevolution/2022/10/emergent-ventures-22nd-cohort.html)
  - 👨🏻‍💻 Atlas fellow
 
 <!--
