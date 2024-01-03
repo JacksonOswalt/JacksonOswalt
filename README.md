@@ -1,6 +1,8 @@
-### I care about building the future.
+#wsg, I'm Jackson
 
-Currently working on AI-enabled **HCIs and agentic hardware**, with an evolving interest in Defense tech.
+### Currently designing my piece of the future.
+
+Working on AI-enabled **HCIs and agentic hardware**, with an evolving interest in Defense tech.
 
 I'm a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
 
