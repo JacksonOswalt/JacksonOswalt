@@ -1,4 +1,4 @@
-#wsg, I'm Jackson
+# wsg, I'm Jackson
 
 ### Currently designing my piece of the future.
 
