@@ -1,6 +1,6 @@
-# I'm passionate about making cool shit.
+## Currently Building Open-Source Hardware
 
-Working on AI-enabled **HCIs and agentic hardware**, with an evolving interest in Defense tech.
+Working on AI-enabled **HCIs and agentic hardware**.
 
 I'm a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
 
@@ -10,6 +10,8 @@ Previously:
  - 🥽 Worked on novel VR hardware
  - 🏅 Funded by Tyler Cowen and Thiel Foundation via. [Emergent Ventures](https://marginalrevolution.com/marginalrevolution/2022/10/emergent-ventures-22nd-cohort.html)
  - 👨🏻‍💻 Atlas fellow
+
+*Working in private repos.*
 
 <!--
 **JacksonOswalt/JacksonOswalt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
