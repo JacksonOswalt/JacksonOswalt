@@ -11,7 +11,7 @@ Previously:
  - 🏅 Funded by Tyler Cowen and Thiel Foundation via. [Emergent Ventures](https://marginalrevolution.com/marginalrevolution/2022/10/emergent-ventures-22nd-cohort.html)
  - 👨🏻‍💻 Atlas fellow
 
-*Working in private repos.*
+*Working exclusively in private repos atm.*
 
 <!--
 **JacksonOswalt/JacksonOswalt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
