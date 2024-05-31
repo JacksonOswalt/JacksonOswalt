@@ -1,6 +1,4 @@
-## Currently Building Open-Source Hardware
-
-Working on AI-enabled **HCIs and agentic hardware**.
+## Exploring **next-gen AI-enabled hardware**.
 
 I'm a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
 
