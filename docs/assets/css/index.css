@@ -91,6 +91,16 @@ button {
   width: 440px;
   order: 1;
 }
+.footer {
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.10);
+  position: absolute;
+  bottom: 25;
+  width: 100%;
+  text-align: center;
+  z-index: 999
+}
 .herotext {
   width: 440px;
   font-family: 'Inter', sans-serif;
@@ -181,9 +191,10 @@ button {
 }
 .content {
   width: calc(100% - 50px);
-  height: calc(100% - 115px);
+  height: calc(100% - 90px);
   margin: 25px;
   margin-top: 90px;
+  margin-bottom: 0px;
   display: flex;
   justify-content: space-between;
 }
@@ -197,6 +208,7 @@ button {
   line-height: 24px;
   font-weight: 350;
   position: relative;
+  background-color: red;
 }
 .back {
   height: 25px;
@@ -212,12 +224,13 @@ button {
 .projectimages {
   background-color: rgba(0, 0, 0, 0.05);
   width: 60%;
-  height: 100%;
+  height: auto;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  margin-bottom: 25px;
 }
 .projectimages img {
     width: 75%;

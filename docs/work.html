@@ -13,7 +13,9 @@
     <body>
         <script>
             window.onload = function() {
-                document.body.classList.add('fade-in');
+                document.querySelectorAll('body > *:not(.gradient-blur)').forEach(function(element) {
+                    element.classList.add('fade-in');
+                });
             };
         </script>
         <div class="header">
@@ -29,7 +31,7 @@
 
         <div id="segment">
 
-            <img src="assets/images/tone.png" alt="Tone Pendant">
+            <img src="assets/images/tone/tone_thumb.png" alt="Tone Pendant">
             
             <div id="text">
                 <strong>Nuclear Fusion Reactor</strong>. At 12 years old I designed and built a functional IEC nuclear fusion reactor.
@@ -46,7 +48,7 @@
 
         <div id="segment">
 
-            <img src="assets/images/tone.png" alt="Tone Pendant">
+            <img src="assets/images/tone/tone_thumb.png" alt="Tone Pendant">
             
             <div id="text">
                 <strong>Virtual Reality</strong>. I prototyped a number of full-custom, compact HMDs.
@@ -63,7 +65,7 @@
 
         <div id="segment">
 
-            <img src="assets/images/tone.png" alt="Tone Pendant">
+            <img src="assets/images/tone/tone_thumb.png" alt="Tone Pendant">
             
             <div id="text">
                 <strong>AI Hardware</strong>. I explored the personal AI space by building out a contextual computer called Tone.
@@ -80,7 +82,7 @@
 
         <div id="segment">
 
-            <img src="assets/images/tone.png" alt="Tone Pendant">
+            <img src="assets/images/tone/tone_thumb.png" alt="Tone Pendant">
             
             <div id="text">
                 <strong>Archipelago</strong>. Building advanced consumer electronics at the intersection of hardware and AI.
@@ -88,6 +90,10 @@
 
             <div id="readmore">
                 More soon
+            </div>
+
+            <div class="footer">
+                I also designed and wrote this site. &copy; 2024
             </div>
 
         </div>
