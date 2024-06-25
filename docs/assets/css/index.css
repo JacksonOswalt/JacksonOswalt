@@ -75,7 +75,7 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 35px;
 }
-#segment {
+.segment {
   height: 100vh;
   scroll-snap-align: start;
   width: 440px;
@@ -86,7 +86,7 @@ button {
   align-items: center;
   justify-content: center;
 }
-#segment img {
+.segment img {
   padding-bottom: 25px;
   width: 440px;
   order: 1;
@@ -102,7 +102,7 @@ button {
   z-index: 999
 }
 .herotext {
-  width: 440px;
+  width: 480px;
   font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-weight: normal;
@@ -175,7 +175,21 @@ button {
 #readmore:hover::before {
   left: 100%;
 }
-#timeline {
+#moresoon {
+  padding: 15px 20px;
+  margin-top: 25px;
+  border-radius: 50px;
+  border: 1px dashed rgba(0, 0, 0, 1);
+  border-style: dashed;
+  border-width: 1.5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  position: relative;
+  overflow: hidden;
+  order: 3;
+}
+.timeline {
   width: 4px;
   height: 45vh;
   background-color: rgba(0, 0, 0, 1);
@@ -188,10 +202,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: blur(0px);
+  transition: filter 1s;
+}
+.timeline.visible {
+  filter: blur(0);
 }
 .content {
   width: calc(100% - 50px);
-  height: calc(100% - 90px);
+  height: calc(100% - 115px);
   margin: 25px;
   margin-top: 90px;
   margin-bottom: 0px;
@@ -230,28 +249,9 @@ button {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin-bottom: 25px;
 }
 .projectimages img {
     width: 75%;
-}
-.carouselcontrol {
-  height: 30px;
-  width: auto;
-  border-radius: 30px;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, .1);
-  position: absolute;
-  bottom: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.carouselcontrol button {
-  width: 20px;
-  height: 20px;
-  border-radius: 10px;
-  margin: 5px;
-  background-color: rgba(0, 0, 0, .1);
 }
 
 /* Blur start*/
