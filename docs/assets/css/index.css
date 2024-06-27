@@ -192,7 +192,7 @@ button {
 .timeline {
   width: 4px;
   height: 45vh;
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, .1);
   border-radius: 2px;
   margin: 25 0;
   position: absolute;
@@ -227,7 +227,6 @@ button {
   line-height: 24px;
   font-weight: 350;
   position: relative;
-  background-color: red;
 }
 .back {
   height: 25px;
