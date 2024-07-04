@@ -98,7 +98,12 @@ button {
   margin-top: 20px;
   width: 348px;
   height: 150px;
-  background-color: grey;
+  position: relative;
+}
+.positionImages img {
+  border-radius: 15px;
+  position: absolute;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.5);
 }
 .activeTitle {
   height: auto;
