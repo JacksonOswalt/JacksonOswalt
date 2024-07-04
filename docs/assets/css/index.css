@@ -149,6 +149,18 @@ button {
   }
 }
 
+@media (max-width: 431px) {
+  .segment {
+    width: 356px;
+    font-size: 16px;
+  }
+  .position {
+    width: 356px;
+  }
+  .positionRight {
+    width: 304px;
+  }
+}
 
 /* Blur start*/
 .gradient-blur {
