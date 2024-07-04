@@ -1,6 +1,6 @@
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Jackson Oswalt</title>
         <link rel="stylesheet" type="text/css" href="assets/css/index.css">
         <link rel="icon" type="image/png" href="assets/images/icon.png">
@@ -20,8 +20,17 @@
             };
         </script>
 
+        <div class="gradient-blur" style="inset: 0 0 auto 0; transform: scaleY(-1);">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
         <div class="segment">
-            <img src="assets/images/pfp.jpg" style="margin-top: 25vh;" alt="Jackson Oswalt">
+            <img src="assets/images/pfp.jpg" id="pfp" alt="Jackson Oswalt">
             <div style="margin-top: 20px;">
                 Hey, I'm Jackson.
                 <br><br
@@ -194,7 +203,7 @@
                     <img src="assets/images/midjourney/icon.svg">
 
                 </div>
-                <div class="positionRight" style="margin-bottom: 45vh;">
+                <div class="positionRight" id="positionLast">
 
                     <div class="activeTitle">
                         
