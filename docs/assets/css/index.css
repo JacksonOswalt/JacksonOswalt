@@ -7,8 +7,8 @@
 }
 html, body {
   height: 100%;
-  overflow: auto;
-  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch; /* Enables smooth scrolling on iOS */
   margin: 0;
 }
 body {
@@ -149,6 +149,112 @@ button {
   }
 }
 
+/* Image cards start */
+#fusion1 {
+  height: 115px;
+  width: 90px;
+  left: 15px;
+  top: 23px;
+  transform: rotate(-2.5deg);
+  transition: transform 0.5s;
+}
+#fusion1:hover {
+  transform: rotate(2.5deg);
+}
+#fusion2 {
+  height: 85px;
+  width: 150px;
+  left: 85px;
+  top: 65px;
+  transform: rotate(-1.5deg);
+  z-index: 1;
+  transition: transform 0.5s;
+}
+#fusion2:hover {
+  transform: rotate(1.5deg);
+}
+#fusion3 {
+  height: 125px;
+  width: 125px;
+  left: 209px;
+  top: 0px;
+  transform: rotate(3.5deg);
+  transition: transform 0.5s;
+}
+#fusion3:hover {
+  transform: rotate(-3.5deg);
+}
+#vr1 {
+  height: 135px;
+  width: 110px;
+  left: 16px;
+  top: 17px;
+  transform: rotate(3.5deg);
+  transition: transform 0.5s;
+}
+#vr1:hover {
+  transform: rotate(-3.5deg);
+}
+#vr2 {
+  height: 180px;
+  width: 115px;
+  left: 126px;
+  top: 0px;
+  transform: rotate(-5deg);
+  z-index: 1;
+  transition: transform 0.5s;
+}
+#vr2:hover {
+  transform: rotate(5deg);
+}
+#vr3 {
+  height: 135px;
+  width: 90px;
+  left: 241px;
+  top: 17px;
+  transform: rotate(2.5deg);
+  transition: transform 0.5s;
+}
+#vr3:hover {
+  transform: rotate(-2.5deg);
+}
+#tone1 {
+  height: 90px;
+  width: 125px;
+  left: 8px;
+  top: 94px;
+  transform: rotate(4deg);
+  z-index: 1;
+  transition: transform 0.5s;
+}
+#tone1:hover {
+  transform: rotate(-4deg);
+}
+#tone2 {
+  height: 133px;
+  width: 200px;
+  left: 74px;
+  top: 0px;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+#tone2:hover {
+  transform: rotate(1deg);
+}
+#tone3 {
+  height: 100px;
+  width: 100px;
+  left: 248px;
+  top: 73px;
+  transform: rotate(-3deg);
+  z-index: 1;
+  transition: transform 0.5s;
+}
+#tone3:hover {
+  transform: rotate(3deg);
+}
+/* Image cards end */
+
 @media (max-width: 431px) {
   .segment {
     width: 356px;
@@ -160,9 +266,38 @@ button {
   .positionRight {
     width: 304px;
   }
+  #fusion1 {
+    left: 0px;
+  }
+  #fusion2 {
+    left: 70px;
+  }
+  #fusion3 {
+    left: 194px;
+  }
+  #vr1 {
+    left: 0px;
+  }
+  #vr2 {
+    left: 110px;
+  }
+  #vr3 {
+    left: 225px;
+  }
+  #tone1 {
+    left: 0px;
+  }
+  #tone2 {
+    height: 123px;
+    width: 185px;
+    left: 66px;
+  }
+  #tone3 {
+    left: 225px;
+  }
 }
 
-/* Blur start*/
+/* Blur start */
 .gradient-blur {
   position: fixed;
   z-index: 5;
@@ -271,4 +406,4 @@ button {
     rgba(0, 0, 0, 1) 100%
   );
 }
-/* Blur ends*/
+/* Blur ends */
