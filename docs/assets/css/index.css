@@ -267,33 +267,33 @@ button {
     width: 304px;
   }
   #fusion1 {
-    left: 0px;
+    left: -10px;
   }
   #fusion2 {
-    left: 70px;
+    left: 60px;
   }
   #fusion3 {
-    left: 194px;
+    left: 184px;
   }
   #vr1 {
-    left: 0px;
+    left: -10px;
   }
   #vr2 {
-    left: 110px;
+    left: 100px;
   }
   #vr3 {
-    left: 225px;
+    left: 215px;
   }
   #tone1 {
-    left: 0px;
+    left: -10px;
   }
   #tone2 {
-    height: 123px;
-    width: 185px;
-    left: 66px;
+    height: 117px;
+    width: 175px;
+    left: 56px;
   }
   #tone3 {
-    left: 225px;
+    left: 205px;
   }
 }
 
