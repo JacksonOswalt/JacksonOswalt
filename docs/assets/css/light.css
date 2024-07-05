@@ -49,12 +49,12 @@ button {
   line-height: 24px;
 }
 .segment img {
-  border-radius: 15px;
   width: 75px;
   height: 75px;
 }
 #pfp {
   margin-top: 25vh;
+  border-radius: 15px;
 }
 .position {
   margin-top: 20px;

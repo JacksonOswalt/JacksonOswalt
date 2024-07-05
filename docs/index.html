@@ -8,14 +8,11 @@
                 const themeStylesheet = document.getElementById('themeStylesheet');
                 const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
                 const setTheme = () => {
-                    const isDarkMode = darkModeMediaQuery.matches;
-                    themeStylesheet.href = isDarkMode ? 'assets/css/dark.css' : 'assets/css/light.css';
-
-                    // Update image sources
-                    const images = document.querySelectorAll('img[src*="assets/images/icons/light"]');
-                    images.forEach(img => {
-                        img.src = img.src.replace('assets/images/icons/light', isDarkMode ? 'assets/images/icons/dark' : 'assets/images/icons/light');
-                    });
+                    if (darkModeMediaQuery.matches) {
+                        themeStylesheet.href = 'assets/css/dark.css';
+                    } else {
+                        themeStylesheet.href = 'assets/css/light.css';
+                    }
                 };
                 darkModeMediaQuery.addEventListener('change', setTheme);
                 setTheme();
