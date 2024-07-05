@@ -2,7 +2,25 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Jackson Oswalt</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+        <link id="themeStylesheet" rel="stylesheet" type="text/css">
+
+            <script>
+                const themeStylesheet = document.getElementById('themeStylesheet');
+                const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+                const setTheme = () => {
+                    const isDarkMode = darkModeMediaQuery.matches;
+                    themeStylesheet.href = isDarkMode ? 'assets/css/dark.css' : 'assets/css/light.css';
+
+                    // Update image sources
+                    const images = document.querySelectorAll('img[src*="assets/images/icons/light"]');
+                    images.forEach(img => {
+                        img.src = img.src.replace('assets/images/icons/light', isDarkMode ? 'assets/images/icons/dark' : 'assets/images/icons/light');
+                    });
+                };
+                darkModeMediaQuery.addEventListener('change', setTheme);
+                setTheme();
+            </script>
+
         <link rel="icon" type="image/png" href="assets/images/icon.png">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,7 +74,7 @@
             <div class="position" style="margin-top: 50px;">
                 <div class="positionLeft">
 
-                    <img src="assets/images/fusion/icon.svg">
+                    <img src="assets/images/icons/light/fusion.svg">
                     <div class="line"></div>
 
                 </div>
@@ -90,7 +108,7 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img src="assets/images/vr/icon.svg" style="width: 49px; padding-top: 6px; padding-bottom: 6px;">
+                    <img src="assets/images/icons/light/vr.svg" style="width: 49px; padding-top: 6px; padding-bottom: 6px;">
                     <div class="line"></div>
 
                 </div>
@@ -124,7 +142,7 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img src="assets/images/tone/icon.svg">
+                    <img src="assets/images/icons/light/tone.svg">
                     <div class="line"></div>
 
                 </div>
@@ -166,7 +184,7 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img src="assets/images/archipelago/icon.svg">
+                    <img src="assets/images/icons/archipelago.svg">
                     <div class="line" style="height:50px;"></div>
 
                 </div>
@@ -174,7 +192,7 @@
 
                     <div class="activeTitle">
 
-                        <span style="font-weight: 600; line-height: 15px;">Archipelago</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px;"> · 2024</span>
+                        <span style="font-weight: 600; line-height: 15px; margin-right: 5px;">Archipelago</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px;"> · 2024</span>
 
                         <div class="active">
                             <div class="activeLight"></div>
@@ -201,14 +219,14 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img src="assets/images/midjourney/icon.svg">
+                    <img src="assets/images/icons/midjourney.svg">
 
                 </div>
                 <div class="positionRight" id="positionLast">
 
                     <div class="activeTitle">
                         
-                        <span style="font-weight: 600; line-height: 15px; letter-spacing: 0.0235em;">Midjourney</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px; letter-spacing: 0.0225em;"> · 2024</span>
+                        <span style="font-weight: 600; line-height: 15px; letter-spacing: 0.0235em; margin-right: 5px;">Midjourney</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px; letter-spacing: 0.0225em;"> · 2024</span>
                     
                         <div class="active">
                             <div class="activeLight"></div>

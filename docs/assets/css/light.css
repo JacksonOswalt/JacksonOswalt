@@ -49,7 +49,7 @@ button {
   line-height: 24px;
 }
 .segment img {
-  border-radius: 5px;
+  border-radius: 15px;
   width: 75px;
   height: 75px;
 }
@@ -139,24 +139,24 @@ button {
 }
 .activeLight {
   background-color: rgba(26, 184, 70, 1);
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   border-radius: 15px;
   position: absolute;
 }
 .activeRadiate {
   background-color: rgba(26, 184, 70, 1);
-  width: 15px;
-  height: 15px;
+  width: 13px;
+  height: 13px;
   border-radius: 25px;
   position: absolute;
-  animation: radiateAnimation 2s infinite;
+  animation: radiateAnimation 1.5s infinite;
 }
 
 @keyframes radiateAnimation {
   0% {
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     opacity: 1;
   }
   50% {
