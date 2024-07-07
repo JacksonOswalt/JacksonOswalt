@@ -17,6 +17,24 @@
                 darkModeMediaQuery.addEventListener('change', setTheme);
                 setTheme();
             </script>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    function updateImageSources() {
+                        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+                        const images = document.querySelectorAll('.mode-sensitive');
+            
+                        images.forEach(img => {
+                            const basePath = 'assets/images/icons/';
+                            const imageType = isDarkMode ? 'dark' : 'light';
+                            const imageName = img.dataset.name;
+                            img.src = `${basePath}${imageType}/${imageName}.svg`;
+                        });
+                    }
+            
+                    updateImageSources();
+                    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateImageSources);
+                });
+            </script>
 
         <link rel="icon" type="image/png" href="assets/images/icon.png">
 
@@ -71,7 +89,8 @@
             <div class="position" style="margin-top: 50px;">
                 <div class="positionLeft">
 
-                    <img src="assets/images/icons/light/fusion.svg">
+                    <img class="mode-sensitive" data-name="fusion" src="assets/images/icons/light/fusion.svg">
+                
                     <div class="line"></div>
 
                 </div>
@@ -82,11 +101,11 @@
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/research.svg"><div>Research</div>
+                            <img class="mode-sensitive" data-name="research" src="assets/images/icons/light/research.svg"><div>Research</div>
                         </div>
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
+                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
                         </div>
 
                     </div>
@@ -105,7 +124,8 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img src="assets/images/icons/light/vr.svg" style="width: 49px; padding-top: 6px; padding-bottom: 6px;">
+                    <img class="mode-sensitive" data-name="vr" src="assets/images/icons/light/vr.svg" style="width: 49px; padding-top: 6px; padding-bottom: 6px;">
+
                     <div class="line"></div>
 
                 </div>
@@ -116,11 +136,11 @@
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/research.svg"><div>Project</div>
+                            <img class="mode-sensitive" data-name="research" src="assets/images/icons/light/research.svg"><div>Research</div>
                         </div>
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
+                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
                         </div>
 
                     </div>
@@ -139,7 +159,7 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img src="assets/images/icons/light/tone.svg">
+                    <img class="mode-sensitive" data-name="tone" src="assets/images/icons/light/tone.svg">
                     <div class="line"></div>
 
                 </div>
@@ -150,19 +170,19 @@
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/startup.svg"><div>Startup</div>
+                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/light/startup.svg"><div>Startup</div>
                         </div>
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/founder.svg"><div>Founder</div>
+                            <img class="mode-sensitive" data-name="founder" src="assets/images/icons/light/founder.svg"><div>Founder</div>
                         </div>
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
+                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
                         </div>
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/ai.svg"><div>AI</div>
+                            <img class="mode-sensitive" data-name="ai" src="assets/images/icons/light/ai.svg"><div>AI</div>
                         </div>
 
                     </div>
@@ -201,11 +221,11 @@
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/startup.svg"><div>Startup</div>
+                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/light/startup.svg"><div>Startup</div>
                         </div>
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/founder.svg"><div>Founder</div>
+                            <img class="mode-sensitive" data-name="founder" src="assets/images/icons/light/founder.svg"><div>Founder</div>
                         </div>
 
                     </div>
@@ -235,11 +255,11 @@
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/startup.svg"><div>Startup</div>
+                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/light/startup.svg"><div>Startup</div>
                         </div>
 
                         <div class="attributes">
-                            <img src="assets/images/icons/light/employee.svg"><div>Employee</div>
+                            <img class="mode-sensitive" data-name="employee" src="assets/images/icons/light/employee.svg"><div>Employee</div>
                         </div>
 
                     </div>
