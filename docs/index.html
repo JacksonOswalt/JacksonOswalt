@@ -2,39 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Jackson Oswalt</title>
-        <link id="themeStylesheet" rel="stylesheet" type="text/css">
-
-            <script>
-                const themeStylesheet = document.getElementById('themeStylesheet');
-                const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-                const setTheme = () => {
-                    if (darkModeMediaQuery.matches) {
-                        themeStylesheet.href = 'assets/css/dark.css';
-                    } else {
-                        themeStylesheet.href = 'assets/css/light.css';
-                    }
-                };
-                darkModeMediaQuery.addEventListener('change', setTheme);
-                setTheme();
-            </script>
-            <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    function updateImageSources() {
-                        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-                        const images = document.querySelectorAll('.mode-sensitive');
-            
-                        images.forEach(img => {
-                            const basePath = 'assets/images/icons/';
-                            const imageType = isDarkMode ? 'dark' : 'light';
-                            const imageName = img.dataset.name;
-                            img.src = `${basePath}${imageType}/${imageName}.svg`;
-                        });
-                    }
-            
-                    updateImageSources();
-                    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateImageSources);
-                });
-            </script>
+        <link rel="stylesheet" type="text/css" href="assets/css/light.css">
 
         <link rel="icon" type="image/png" href="assets/images/icon.png">
 
