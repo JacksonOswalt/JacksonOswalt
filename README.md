@@ -1,4 +1,6 @@
-## Exploring **next-gen AI-enabled hardware**.
+##Exploring **next-gen AI-enabled hardware**.
+
+Currently I'm engineering new human-computer interactions at [Midjourney](https://midjourney.com).
 
 I'm a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
 
