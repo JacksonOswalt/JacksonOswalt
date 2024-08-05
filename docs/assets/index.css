@@ -15,6 +15,8 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   margin: 0px;
+  opacity: 0; /* Start with invisible body */
+  transition: opacity 1s ease; /* Smooth transition for fade-in */
 }
 a {
   color: black;
@@ -193,6 +195,14 @@ button {
 }
 .writingContainer h1 {
   font-weight: 500;
+}
+.writingContainer h2 {
+  font-weight: 600;
+  color: black;
+  font-size: 18px;
+}
+.writingContainer ul {
+  font-weight: 600;
 }
 .writingContainer p {
   color: rgba(0, 0, 0, 0.75);

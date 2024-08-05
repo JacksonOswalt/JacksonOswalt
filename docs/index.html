@@ -20,6 +20,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
         <meta property="og:image" content="assets/images/thumb.png">
+
+        <meta  name="twitter:card"  content="summary_large_image" >
+        <meta  name="twitter:title"  content="Home" >
+        <meta  name="twitter:description"  content="Jackson Oswalt Personal Site" >
+        <meta  name="twitter:image"  content="https://jacksonoswalt.com/assets/index.png" >
+
     </head>
     <body>
 
@@ -30,6 +36,7 @@
         
         <script>
             window.onload = function() {
+                document.body.style.opacity = 1; // Fade in the body after loading
                 const elements = document.querySelectorAll('body *:not(.gradient-blur)');
                 elements.forEach(element => {
                     element.classList.add('fade-in');
