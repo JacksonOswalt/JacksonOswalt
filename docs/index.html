@@ -10,6 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <meta property="og:image" content="assets/images/thumb.png">
     </head>
     <body>
 
@@ -55,23 +56,23 @@
                 Currently, I'm building new physical computing interfaces at <a href="https://www.midjourney.com/" target="_blank">Midjourney</a>.
             </div>
 
-            <div id="downarrow" class="fade-in-out">
+            <div id="downarrow" class="bounce">
                 <img src="assets/images/icons/downarrow.svg" alt="Down arrow" width="24" height="24">
             </div>
             <style>
-                @keyframes fadeInOut {
-                    0%, 100% { opacity: 0; }
-                    50% { opacity: 1; }
+                @keyframes bounce {
+                    0%, 100% { transform: translateY(0); }
+                    50% { transform: translateY(-10px); }
                 }
-                .fade-in-out {
-                    animation: fadeInOut 3s ease-in-out infinite;
+                .bounce {
+                    animation: bounce 1.5s ease-in-out infinite;
                 }
             </style>
 
         </div class="segment">
-        <div class="segment">
+        <div class="segment" style="height: auto;">
 
-            <div class="position" style="margin-top: 0px;">
+            <a href="fusion.html" class="position" style="margin-top: 0px;">
                 <div class="positionLeft">
 
                     <img class="mode-sensitive" data-name="fusion" src="assets/images/icons/fusion.svg">
@@ -104,9 +105,9 @@
                     </div>
 
                 </div>
-            </div>
+            </a>
 
-            <div class="position">
+            <a href="vr.html" class="position">
                 <div class="positionLeft">
 
                     <img class="mode-sensitive" data-name="vr" src="assets/images/icons/vr.svg" style="width: 49px; padding-top: 6px; padding-bottom: 6px;">
@@ -139,9 +140,9 @@
                     </div>
 
                 </div>                
-            </div>
+            </a>
 
-            <div class="position">
+            <a href="tone.html" class="position">
                 <div class="positionLeft">
 
                     <img class="mode-sensitive" data-name="tone" src="assets/images/icons/tone.svg">
@@ -181,9 +182,9 @@
                     </div>
 
                 </div>                
-            </div>
+            </a>
 
-            <div class="position">
+            <div class="position" style="pointer-events: none;">
                 <div class="positionLeft">
 
                     <img src="assets/images/icons/archipelago.svg">
@@ -218,7 +219,7 @@
                 </div>                
             </div>
 
-            <div class="position">
+            <div class="position" style="pointer-events: none;">
                 <div class="positionLeft">
 
                     <img src="assets/images/icons/midjourney.svg">

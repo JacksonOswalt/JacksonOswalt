@@ -18,6 +18,7 @@ body {
 }
 a {
   color: black;
+  text-decoration: none;
 }
 button {
   background: none;
@@ -56,12 +57,11 @@ button {
   height: 50px;
   width: 50px;
   border-radius: 25px;
-  background-color: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: 50%;
+  left: calc(50% - 25px);
   top: 80%;
   transform: translate(-50%, -50%);
 }
@@ -79,6 +79,15 @@ button {
   height: auto;
   display: flex;
   justify-content: flex-start;
+  transition: transform 0.3s ease, background-color 0.3s ease, border-radius 0.3s ease, padding 0.3s ease;
+  margin-left: auto;
+  margin-right: auto;
+}
+.position:hover {
+  transform: scale(.95) translateX(-16px);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 10px;
 }
 .positionLeft {
   height: auto;
@@ -173,7 +182,7 @@ button {
   height: auto;
   width: 500px;
   position: relative;
-  margin: 15vh auto 0;
+  margin: 15vh auto 8vh;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -186,13 +195,26 @@ button {
   font-weight: 500;
 }
 .writingContainer p {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.75);
 }
 .writingContainer img {
   margin-top: 40px;
+  margin-bottom: 40px;
   width: 100%;
   height: auto;
   border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.backbutton {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.5s, font-weight 0.5s, letter-spacing 1s;
+}
+.backbutton:hover {
+  letter-spacing: .25px;
+  opacity: 0.75;
+  font-weight: 400;
 }
 
 @keyframes radiateAnimation {
