@@ -62,7 +62,7 @@ button {
   align-items: center;
   position: absolute;
   left: calc(50% - 25px);
-  top: 80%;
+  top: 78%;
   transform: translate(-50%, -50%);
 }
 #downarrow img {
@@ -209,7 +209,7 @@ button {
   color: black;
   font-weight: 500;
   text-decoration: none;
-  transition: opacity 0.5s, font-weight 0.5s, letter-spacing 1s;
+  transition: opacity 0.3s ease, font-weight 0.3s ease, letter-spacing .3s ease;
 }
 .backbutton:hover {
   letter-spacing: .25px;
@@ -345,7 +345,7 @@ button {
   .header{
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
   }
-  .segment {
+  .segment, .writingContainer {
     width: 356px;
     font-size: 16px;
   }
