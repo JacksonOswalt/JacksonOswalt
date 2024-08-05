@@ -184,7 +184,7 @@ button {
   height: auto;
   width: 500px;
   position: relative;
-  margin: 15vh auto 8vh;
+  margin: 50px auto 50px;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 30px;
@@ -355,7 +355,7 @@ button {
   .header{
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
   }
-  .segment, .writingContainer {
+  .segment {
     width: 356px;
     font-size: 16px;
   }
@@ -398,6 +398,23 @@ button {
   }
   #positionLast {
     margin-bottom: 50px;
+  }
+  .position {
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    border-radius: 15px;
+    transform: scale(0.95) translateX(-10px);
+  }
+  .line {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 625px) {
+  .writingContainer {
+    margin-top: 50px;
+    width: 356px;
   }
 }
 

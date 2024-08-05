@@ -39,7 +39,9 @@
                 document.body.style.opacity = 1; // Fade in the body after loading
                 const elements = document.querySelectorAll('body *:not(.gradient-blur)');
                 elements.forEach(element => {
-                    element.classList.add('fade-in');
+                    if (!element.closest('.gradient-blur')) {
+                        element.classList.add('fade-in');
+                    }
                 });
             };
         </script>
@@ -205,7 +207,7 @@
                 </div>                
             </a>
 
-            <div class="position" style="pointer-events: none;">
+            <div class="position" style="background-color: white; pointer-events: none;">
                 <div class="positionLeft">
 
                     <img src="assets/images/icons/archipelago.svg">
@@ -240,7 +242,7 @@
                 </div>                
             </div>
 
-            <div class="position" style="pointer-events: none;">
+            <div class="position" style="background-color: white; pointer-events: none;">
                 <div class="positionLeft">
 
                     <img src="assets/images/icons/midjourney.svg">

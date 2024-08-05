@@ -15,7 +15,7 @@
         <script>
             window.onload = function() {
                 document.body.style.opacity = 1; // Fade in the body after loading
-                const elements = document.querySelectorAll('body *:not(.gradient-blur)');
+                const elements = document.querySelectorAll('body *:not(.gradient-blur):not(.gradient-blur *)');
                 elements.forEach(element => {
                     element.classList.add('fade-in');
                 });
@@ -77,7 +77,7 @@
 
             <a href="index.html" class="backbutton">< Other work</a>
 
-        </div class="segment">
+        </div>
        
         <!-- Start of Blur Effect -->
         <div class="gradient-blur">
