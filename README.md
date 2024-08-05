@@ -1,4 +1,4 @@
-##Exploring **next-gen AI-enabled hardware**.
+##Exploring **next-gen AI-enabled hardware**.##
 
 Currently I'm engineering new human-computer interactions at [Midjourney](https://midjourney.com).
 
