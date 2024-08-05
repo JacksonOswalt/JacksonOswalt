@@ -2,7 +2,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
         <title>Jackson Oswalt</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/light.css">
+        <link rel="stylesheet" type="text/css" href="assets/index.css">
 
         <link rel="icon" type="image/png" href="assets/images/icon.png">
 
@@ -47,34 +47,50 @@
                         document.getElementById('yearsActive').textContent = yearsActive.toFixed(10);
                     }
                     calculateYears();
-                    setInterval(calculateYears, 10); // Update every second
+                    setInterval(calculateYears, 10);
                 </script>
                 <br><br>
                 At 12 years old, I built a <a href="https://www.foxnews.com/science/teen-builds-working-nuclear-fusion-reactor-in-memphis-home" target="_blank">nuclear fusion reactor</a>.
                 <br><br>
-                Currently, I'm creating new physical computer interactions at <a href="https://www.midjourney.com/" target="_blank">Midjourney</a>.
+                Currently, I'm building new physical computing interfaces at <a href="https://www.midjourney.com/" target="_blank">Midjourney</a>.
             </div>
 
-            <div class="position" style="margin-top: 50px;">
+            <div id="downarrow" class="fade-in-out">
+                <img src="assets/images/icons/downarrow.svg" alt="Down arrow" width="24" height="24">
+            </div>
+            <style>
+                @keyframes fadeInOut {
+                    0%, 100% { opacity: 0; }
+                    50% { opacity: 1; }
+                }
+                .fade-in-out {
+                    animation: fadeInOut 3s ease-in-out infinite;
+                }
+            </style>
+
+        </div class="segment">
+        <div class="segment">
+
+            <div class="position" style="margin-top: 0px;">
                 <div class="positionLeft">
 
-                    <img class="mode-sensitive" data-name="fusion" src="assets/images/icons/light/fusion.svg">
+                    <img class="mode-sensitive" data-name="fusion" src="assets/images/icons/fusion.svg">
                 
                     <div class="line"></div>
 
                 </div>
                 <div class="positionRight">
 
-                    <span style="font-weight: 600; line-height: 15px;">Nuclear Fusion Reactor</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px;"> · 2017-2020</span>
+                    <span style="font-weight: 600; line-height: 15px;">Nuclear Fusion Reactor</span><span style="color: rgba(0, 0, 0, 0.5); font-weight: 400; line-height: 15px;"> · 2017-2020</span>
 
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="research" src="assets/images/icons/light/research.svg"><div>Research</div>
+                            <img class="mode-sensitive" data-name="research" src="assets/images/icons/research.svg"><div>Research</div>
                         </div>
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
+                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/hardware.svg"><div>Hardware</div>
                         </div>
 
                     </div>
@@ -93,23 +109,23 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img class="mode-sensitive" data-name="vr" src="assets/images/icons/light/vr.svg" style="width: 49px; padding-top: 6px; padding-bottom: 6px;">
+                    <img class="mode-sensitive" data-name="vr" src="assets/images/icons/vr.svg" style="width: 49px; padding-top: 6px; padding-bottom: 6px;">
 
                     <div class="line"></div>
 
                 </div>
                 <div class="positionRight">
 
-                    <span style="font-weight: 600; line-height: 15px;">Virtual Reality</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px;"> · 2022-2023</span>
+                    <span style="font-weight: 600; line-height: 15px;">Virtual Reality</span><span style="color: rgba(0, 0, 0, 0.5); font-weight: 400; line-height: 15px;"> · 2022-2023</span>
 
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="research" src="assets/images/icons/light/research.svg"><div>Research</div>
+                            <img class="mode-sensitive" data-name="research" src="assets/images/icons/research.svg"><div>Research</div>
                         </div>
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
+                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/hardware.svg"><div>Hardware</div>
                         </div>
 
                     </div>
@@ -128,30 +144,30 @@
             <div class="position">
                 <div class="positionLeft">
 
-                    <img class="mode-sensitive" data-name="tone" src="assets/images/icons/light/tone.svg">
+                    <img class="mode-sensitive" data-name="tone" src="assets/images/icons/tone.svg">
                     <div class="line"></div>
 
                 </div>
                 <div class="positionRight">
 
-                    <span style="font-weight: 600; line-height: 15px;">Contextual Computing</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px;"> · 2023-2024</span>
+                    <span style="font-weight: 600; line-height: 15px;">Contextual Computing</span><span style="color: rgba(0, 0, 0, 0.5); font-weight: 400; line-height: 15px;"> · 2023-2024</span>
 
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/light/startup.svg"><div>Startup</div>
+                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/startup.svg"><div>Startup</div>
                         </div>
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="founder" src="assets/images/icons/light/founder.svg"><div>Founder</div>
+                            <img class="mode-sensitive" data-name="founder" src="assets/images/icons/founder.svg"><div>Founder</div>
                         </div>
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/light/hardware.svg"><div>Hardware</div>
+                            <img class="mode-sensitive" data-name="hardware" src="assets/images/icons/hardware.svg"><div>Hardware</div>
                         </div>
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="ai" src="assets/images/icons/light/ai.svg"><div>AI</div>
+                            <img class="mode-sensitive" data-name="ai" src="assets/images/icons/ai.svg"><div>AI</div>
                         </div>
 
                     </div>
@@ -178,7 +194,7 @@
 
                     <div class="activeTitle">
 
-                        <span style="font-weight: 600; line-height: 15px; margin-right: 5px;">Archipelago</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px;"> · 2024</span>
+                        <span style="font-weight: 600; line-height: 15px; margin-right: 5px;">Archipelago</span><span style="color: rgba(0, 0, 0, 0.5); font-weight: 400; line-height: 15px;"> · 2024</span>
 
                         <div class="active">
                             <div class="activeLight"></div>
@@ -190,11 +206,11 @@
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/light/startup.svg"><div>Startup</div>
+                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/startup.svg"><div>Startup</div>
                         </div>
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="founder" src="assets/images/icons/light/founder.svg"><div>Founder</div>
+                            <img class="mode-sensitive" data-name="founder" src="assets/images/icons/founder.svg"><div>Founder</div>
                         </div>
 
                     </div>
@@ -212,7 +228,7 @@
 
                     <div class="activeTitle">
                         
-                        <span style="font-weight: 600; line-height: 15px; letter-spacing: 0.0235em; margin-right: 5px;">Midjourney</span><span style="opacity: 0.5; font-weight: 500; line-height: 15px; letter-spacing: 0.0225em;"> · 2024</span>
+                        <span style="font-weight: 600; line-height: 15px; letter-spacing: 0.0235em; margin-right: 5px;">Midjourney</span><span style="color: rgba(0, 0, 0, 0.5); font-weight: 400; line-height: 15px;"> · 2024</span>
                     
                         <div class="active">
                             <div class="activeLight"></div>
@@ -224,11 +240,11 @@
                     <div class="positionAttributes">
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/light/startup.svg"><div>Startup</div>
+                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/startup.svg"><div>Startup</div>
                         </div>
 
                         <div class="attributes">
-                            <img class="mode-sensitive" data-name="employee" src="assets/images/icons/light/employee.svg"><div>Employee</div>
+                            <img class="mode-sensitive" data-name="employee" src="assets/images/icons/employee.svg"><div>Employee</div>
                         </div>
 
                     </div>
