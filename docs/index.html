@@ -40,15 +40,19 @@
         <!-- End Google Tag Manager (noscript) -->
         
         <script>
-            window.onload = function() {
-                document.body.style.opacity = 1; // Fade in the body after loading
-                const elements = document.querySelectorAll('body *:not(.gradient-blur)');
-                elements.forEach(element => {
-                    if (!element.closest('.gradient-blur')) {
+            window.addEventListener('load', function() {
+                // Check if all images and other resources are loaded
+                Promise.all(Array.from(document.images).map(img => {
+                    if (img.complete) return Promise.resolve();
+                    return new Promise(resolve => { img.onload = img.onerror = resolve; });
+                })).then(() => {
+                    // All images are loaded, now add the fade-in effect
+                    const elements = document.querySelectorAll('body *:not(.gradient-blur)');
+                    elements.forEach(element => {
                         element.classList.add('fade-in');
-                    }
+                    });
                 });
-            };
+            });
         </script>
 
         <div class="gradient-blur" style="inset: 0 0 auto 0; transform: scaleY(-1);">
@@ -79,7 +83,7 @@
                     setInterval(calculateYears, 10);
                 </script>
                 <br><br>
-                At 12 years old, I built a <a href="https://www.foxnews.com/science/teen-builds-working-nuclear-fusion-reactor-in-memphis-home" target="_blank">nuclear fusion reactor</a>.
+                At 12 years old, I built a <a href="https://www.foxnews.com/science/teen-builds-working-nuclear-fusion-reactor-in-memphis-home" target="_blank" style="text-decoration: underline;">nuclear fusion reactor</a>.
                 <br><br>
                 Currently, I'm building new physical computing interfaces at <a href="https://www.midjourney.com/" target="_blank">Midjourney</a>.
             </div>
@@ -212,42 +216,7 @@
                 </div>                
             </a>
 
-            <div class="position" style="margin-top: 75px; background-color: rgba(255, 255, 255, 0); border: 0px; pointer-events: none;">
-                <div class="positionLeft">
-
-                    <img src="assets/images/icons/archipelago.svg">
-                    <div class="line" style="height:50px;"></div>
-
-                </div>
-                <div class="positionRight">
-
-                    <div class="activeTitle">
-
-                        <span style="font-weight: 600; line-height: 15px; margin-right: 5px;">Archipelago</span><span style="color: rgba(0, 0, 0, 0.5); font-weight: 400; line-height: 15px;"> · 2024</span>
-
-                        <div class="active">
-                            <div class="activeLight"></div>
-                            <div class="activeRadiate"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="positionAttributes">
-
-                        <div class="attributes">
-                            <img class="mode-sensitive" data-name="startup" src="assets/images/icons/startup.svg"><div>Startup</div>
-                        </div>
-
-                        <div class="attributes">
-                            <img class="mode-sensitive" data-name="founder" src="assets/images/icons/founder.svg"><div>Founder</div>
-                        </div>
-
-                    </div>
-
-                </div>                
-            </div>
-
-            <div class="position" style="background-color: rgba(255, 255, 255, 0); border: 0px; pointer-events: none;">
+            <div class="position" style="background-color: rgba(255, 255, 255, 0); border: 0px; pointer-events: none; margin-top: 50px;">
                 <div class="positionLeft">
 
                     <img src="assets/images/icons/midjourney.svg">

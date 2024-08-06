@@ -13,13 +13,19 @@
     </head>
     <body>
         <script>
-            window.onload = function() {
-                document.body.style.opacity = 1; // Fade in the body after loading
-                const elements = document.querySelectorAll('body *:not(.gradient-blur):not(.gradient-blur *)');
-                elements.forEach(element => {
-                    element.classList.add('fade-in');
+            window.addEventListener('load', function() {
+                // Check if all images and other resources are loaded
+                Promise.all(Array.from(document.images).map(img => {
+                    if (img.complete) return Promise.resolve();
+                    return new Promise(resolve => { img.onload = img.onerror = resolve; });
+                })).then(() => {
+                    // All images are loaded, now add the fade-in effect
+                    const elements = document.querySelectorAll('body *:not(.gradient-blur)');
+                    elements.forEach(element => {
+                        element.classList.add('fade-in');
+                    });
                 });
-            };
+            });
         </script>
         <div class="gradient-blur" style="inset: 0 0 auto 0; transform: scaleY(-1);">
             <div></div>

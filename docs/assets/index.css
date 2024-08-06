@@ -15,8 +15,6 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   margin: 0px;
-  opacity: 0; /* Start with invisible body */
-  transition: opacity 1s ease; /* Smooth transition for fade-in */
 }
 a {
   color: black;
@@ -88,7 +86,7 @@ button {
 .position:hover {
   transform: scale(.95) translateX(-16px);
   background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 15px;
+  border-radius: 25px;
   padding: 10px;
 }
 .positionLeft {
@@ -359,9 +357,6 @@ button {
     width: 356px;
     font-size: 16px;
   }
-  .position {
-    width: 356px;
-  }
   .positionRight {
     width: 304px;
   }
@@ -400,12 +395,19 @@ button {
     margin-bottom: 50px;
   }
   .position {
-    pointer-events: none;
+    width: 356px;
+    transition: none;
     background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 10px;
     border-radius: 25px;
     transform: scale(0.95) translateX(-10px);
+  }
+  .position:hover {
+    transform: scale(0.95) translateX(-10px);
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 25px;
+    padding: 10px;
   }
   .line {
     display: none;
