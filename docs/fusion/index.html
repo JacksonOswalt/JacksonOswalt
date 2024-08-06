@@ -19,6 +19,39 @@
         gtag('js', new Date());
 
         gtag('config', 'G-0R4J12LCF9');
+
+        // Wait for all content to load before fading in
+        window.addEventListener('load', function() {
+            Promise.all([
+                // Wait for all images to load
+                ...Array.from(document.images).map(img => {
+                    if (img.complete) return Promise.resolve();
+                    return new Promise(resolve => { img.onload = img.onerror = resolve; });
+                }),
+                // Wait for all stylesheets to load
+                ...Array.from(document.styleSheets).map(stylesheet => {
+                    if (stylesheet.cssRules.length > 0) return Promise.resolve();
+                    return new Promise(resolve => {
+                        stylesheet.onload = resolve;
+                        stylesheet.onerror = resolve;
+                    });
+                }),
+                // Wait for all scripts to load
+                ...Array.from(document.scripts).map(script => {
+                    if (script.readyState === 'complete') return Promise.resolve();
+                    return new Promise(resolve => {
+                        script.onload = resolve;
+                        script.onerror = resolve;
+                    });
+                })
+            ]).then(() => {
+                // All content is loaded, now add the fade-in effect
+                const elements = document.querySelectorAll('body *:not(.gradient-blur)');
+                elements.forEach(element => {
+                    element.classList.add('fade-in');
+                });
+            });
+        });
     </script>
 
     <body>
