@@ -1,13 +1,13 @@
-Currently I'm engineering new human-computer interactions at [Midjourney](https://midjourney.com).
+moonshots @midjourney
 
-I'm a student at USC's [Iovine and Young Academy](https://iovine-young.usc.edu/).
-
-Previously:
+prev:
 
  - 🧪 Built a nuclear fusion reactor at 12
  - 🥽 Worked on novel VR hardware
  - 🏅 Funded by Tyler Cowen and Thiel Foundation via. [Emergent Ventures](https://marginalrevolution.com/marginalrevolution/2022/10/emergent-ventures-22nd-cohort.html)
  - 👨🏻‍💻 Atlas fellow
+ - Built wearable computing startup
+ - Dropped out of USC
 
 <!--
 **JacksonOswalt/JacksonOswalt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
