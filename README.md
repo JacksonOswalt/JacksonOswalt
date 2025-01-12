@@ -7,7 +7,7 @@ prev:
  - 🏅 Funded by Tyler Cowen and Thiel Foundation via. [Emergent Ventures](https://marginalrevolution.com/marginalrevolution/2022/10/emergent-ventures-22nd-cohort.html)
  - 👨🏻‍💻 Atlas fellow
  - Built wearable computing startup
- - Dropped out of USC
+ - Dropped out of USC to join Midjourney
 
 <!--
 **JacksonOswalt/JacksonOswalt** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
